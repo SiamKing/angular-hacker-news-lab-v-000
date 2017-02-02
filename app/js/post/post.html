@@ -1,0 +1,16 @@
+<div class="post">
+  <div class="post__title">
+    <a href="post.post.url">{{post.post.title}}</a> -- by {{post.post.by}}
+  </div>
+  <div class="post__description">
+     Score {{post.post.score}}</a>
+  </div>
+  <div class="comments">
+    <ul>
+      <li ng-repeat="post in post.post.kids">
+        <item id="post"></item>
+      </li>
+    </ul>
+
+  </div>
+</div>

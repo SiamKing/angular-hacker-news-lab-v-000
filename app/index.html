@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Angular Application</title>
+
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+	<div ng-app="app" class="app">
+		<div class="header">
+			<div class="header__fixed">
+				<ul>
+					<a ui-sref="top" ui-sref-active="active">Top Stories</a>
+				</ul>
+			</div>
+		</div>
+		<div ui-view></div>
+	</div>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/posts/PostsService.js"></script>
+	<script src="js/posts/TopStoriesController.js"></script>
+	<script src="js/post/item.js"></script>
+	<script src="js/post/PostController.js"></script>
+
+
+</body>
+</html>
